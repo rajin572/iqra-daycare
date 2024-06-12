@@ -5,17 +5,12 @@ import Link from "next/link";
 import React from "react";
 import logo from "@/assets/logo/logo.png";
 
-import {
-  FaFacebook,
-  FaGithub,
-  FaInstagramSquare,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaFacebook, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="mt-20">
+    <div className="">
       <div className="bg-[#FFDFA5] text-primary-foreground pt-10 pb-5">
         <Container>
           <h1 className=" mb-3 text-primary-foreground font-bold">
@@ -56,7 +51,9 @@ const Footer = () => {
                 <li className="mb-2">
                   {" "}
                   <span className="font-bold">Email:</span>{" "}
-                  <span className="">iqraearly@gmail.com</span>
+                  <span className="">
+                    iqra.early.learning.daycare@gmail.com
+                  </span>
                 </li>
                 <li className="mb-2">
                   <div className="flex justify-start items-center gap-5 my-5">
@@ -67,10 +64,10 @@ const Footer = () => {
                       <FaFacebook className="text-secondary cursor-pointer  text-2xl" />
                     </Link>
                     <Link
-                      href="https://www.facebook.com/profile.php?id=61559139025963&mibextid=JRoKGi"
+                      href="https://www.youtube.com/@IqraDaycare"
                       target="_blank"
                     >
-                      <FaInstagramSquare className="text-secondary cursor-pointer text-2xl" />
+                      <FaYoutube className="text-secondary cursor-pointer text-2xl" />
                     </Link>
                   </div>
                 </li>

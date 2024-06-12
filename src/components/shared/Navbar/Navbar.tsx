@@ -5,17 +5,19 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import logo from "@/assets/logo/logo.png";
+import { usePathname } from "next/navigation";
 
 const NavItems = [
   { id: "1", name: "Home", route: "#home" },
-  { id: "2", name: "About", route: "#aboutus" },
-  { id: "2", name: "Services", route: "/about" },
-  { id: "2", name: "Our Team", route: "#ourteam" },
-  { id: "2", name: "Gallery", route: "/about" },
-  { id: "2", name: "Contact Us", route: "/about" },
+  { id: "2", name: "About", route: "#about-us" },
+  { id: "3", name: "Our Team", route: "#ourteam" },
+  { id: "4", name: "Pricing", route: "#pricing" },
+  { id: "5", name: "Gallery", route: "#gallery" },
+  { id: "6", name: "Contact Us", route: "#contact" },
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="bg-white z-[999] text-primary-foreground border-b-2 border-secondary">
@@ -38,8 +40,8 @@ const Navbar = () => {
           <nav
             className={
               mobileMenuOpen
-                ? " w-full lg:static absolute top-[30px] left-0 lg:bg-none bg-background transition-all lg:z-0 -z-50"
-                : " w-full lg:static absolute top-[-550px] left-0 transition-all lg:z-0 -z-50"
+                ? " w-full lg:static absolute top-[30px] left-0 lg:bg-none bg-white transition-all duration-500 lg:z-0 -z-50"
+                : " w-full lg:static absolute top-[-550px] left-0 transition-all duration-500 lg:z-0 -z-50"
             }
           >
             {/* //* For Laptop or Desktop */}
@@ -56,7 +58,7 @@ const Navbar = () => {
             </div>
             {/* //*For Tab or Mobile */}
             <div className="block lg:hidden">
-              <ul className="flex justify-end items-center gap-2 lg:flex-row flex-col lg:py-0 py-10 bg-muted">
+              <ul className="flex justify-end items-center gap-2 lg:flex-row flex-col lg:py-0 py-10 bg-white border-b border-secondary">
                 {NavItems.map((navItem) => (
                   <li
                     key={navItem.id}

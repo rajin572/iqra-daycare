@@ -52,7 +52,7 @@ const BannerSlider = ({ bannerItems }: { bannerItems: IBannerItems[] }) => {
                     where your child can thrive.
                   </p>
                   <div>
-                    <Link href="/donations">
+                    <Link href="#contact">
                       <Button className="bg-secondary text-white hover:bg-accent">
                         Contact Us
                       </Button>

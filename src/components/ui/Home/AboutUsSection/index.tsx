@@ -15,7 +15,7 @@ const AboutUsSection = () => {
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-between items-stretch gap-2 lg:gap-5">
         <div>
-          <h1 className="text-2xl md:text-3xl font-bold mb-5">
+          <h1 className="text-2xl md:text-3xl font-bold mb-5 text-secondary">
             About our Daycare
           </h1>
           <p className="text-slate-700 dark:text-slate-400">
@@ -34,7 +34,7 @@ const AboutUsSection = () => {
         <div className="w-full min-h-64 max-h-96">
           {isClient && (
             <ReactPlayer
-              url={"https://youtu.be/XWzGvM2XhcU?si=WLlw1Du6cnbuDq2D"}
+              url={"https://youtube.com/shorts/B5JkxDEwQbs?feature=share"}
               controls
               width="100%"
             />
