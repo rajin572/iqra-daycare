@@ -79,22 +79,22 @@
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  color: #ffa500;
+  color: #ffffff;
   padding: 8px 12px;
-  font-size: 1rem !important;
-  background-color: #ffffff80;
+  font-size: 1.2rem !important;
+  background-color: #19aa5f;
   border-radius: 100%;
   z-index: 100;
 }
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-  color: #ffa500;
+  color: #ffffff;
   padding: 8px 12px;
   font-size: 1rem !important;
-  background-color: #ffffff80;
+  background-color: #19aa5f;
   border-radius: 100%;
   z-index: 100;
 }
 .swiper-pagination-bullet {
-  background-color: #ffa500 !important;
+  background-color: #19aa5f !important;
 }

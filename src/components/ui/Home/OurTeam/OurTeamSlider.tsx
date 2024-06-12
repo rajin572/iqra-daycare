@@ -1,6 +1,9 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import teacher from "@/assets/images/team2.jpg";
+import teacher1 from "@/assets/images/team1.jpg";
+import teacher2 from "@/assets/images/team2.jpg";
+import teacher3 from "@/assets/images/team3.jpg";
+import teacher4 from "@/assets/images/team4.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,26 +16,26 @@ import Image from "next/image";
 const teachers = [
   {
     id: 1,
-    image: teacher.src,
-    name: "Faruk Ahmed",
-    designation: "Founder",
+    image: teacher1,
+    name: "Rehana Akter",
+    designation: "Founder/Teacher",
   },
   {
     id: 2,
-    image: teacher.src,
-    name: "Noyon Ahmed",
+    image: teacher2,
+    name: "Fahmida Wohab",
     designation: "Teacher",
   },
   {
     id: 3,
-    image: teacher.src,
-    name: "Shahid Ahmed",
+    image: teacher3,
+    name: "Fahima Rahman",
     designation: "Teacher",
   },
   {
     id: 4,
-    image: teacher.src,
-    name: "Habib Ahmed",
+    image: teacher4,
+    name: "Arpita Wohab",
     designation: "Teacher",
   },
 ];

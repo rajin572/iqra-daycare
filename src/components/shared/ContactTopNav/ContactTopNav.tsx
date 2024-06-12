@@ -15,16 +15,16 @@ const ContactTopNav = () => {
                   className=" flex justify-center items-center  text-decoration-none list-hover"
                 >
                   <Phone width={15} height={20} className="me-1" />
-                  <span>+8801647742754</span>
+                  <span>+8801677215739</span>
                 </a>
               </li>
             </ul>
             <a
-              href="mailto:companymail@gmail.com"
+              href="mailto:iqra.early.learning.daycare@gmail.com"
               className="flex justify-center items-center text-decoration-none list-hover"
             >
               <Mail width={15} height={20} className="me-1" />
-              <span>companymail@gmail.com</span>
+              <span>iqra.early.learning.daycare@gmail.com</span>
             </a>
           </div>
         </Container>

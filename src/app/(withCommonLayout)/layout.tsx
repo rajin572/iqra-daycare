@@ -2,6 +2,7 @@ import ContactTopNav from "@/components/shared/ContactTopNav/ContactTopNav";
 import Footer from "@/components/shared/Footer/Footer";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import React from "react";
+import { Toaster } from "sonner";
 
 const CommonLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -12,7 +13,7 @@ const CommonLayout = ({ children }: { children: React.ReactNode }) => {
       </div>
       <div>{children}</div>
       <Footer />
-      {/* <Toaster /> */}
+      <Toaster />
     </div>
   );
 };
